@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ms"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sistem Pengurusan Klinik KK BTR - Log Masuk</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white transition-colors duration-300">
+<!-- LOGIN SCREEN (Default View) -->
+<div class="min-h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-center" data-alt="Modern clinical background with medical equipment" id="login-screen" style='background-image: linear-gradient(rgba(19, 127, 236, 0.1), rgba(19, 127, 236, 0.1)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEvm2o0n9g7mbmdD9Nvbsry6A26sdoubfoZUIDCvIt7AYnG48vYKtazaZJhlmnHLLvIDHCcbuiw4fWcHBhqtt5l7US2IjRPCHuM85CYFm_DvHiKMPsPW-_UeYV_UawgFI1vU1n817uUbYBYttFQoBHEUQEQVU6nyJ65CzZT2CRbaIsyuBJ-dIVoh8UT1lYdGbdIBwnwWsDO1dxGPYlSDQeKpIRL-CgO78psmaRDr9ZBhA4xCxqenR6wRKU5g4UQMeFIyugUIWezw4");'>
+<div class="absolute inset-0 bg-white/60 dark:bg-black/60 backdrop-blur-sm"></div>
+<div class="relative z-10 w-full max-w-[960px] px-4 py-10 flex flex-col md:flex-row gap-0 bg-white dark:bg-[#1a2632] shadow-2xl rounded-xl overflow-hidden">
+<!-- Left Side: Branding/Image -->
+<div class="hidden md:flex flex-1 flex-col justify-end p-8 bg-cover bg-center relative min-h-[500px]" data-alt="Staff working at a modern medical reception desk" style='background-image: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCf81hspdRUPcqIU5J2hO0b7PkyGvlpvYC8AtI7KUYcnnDcRVboP6B7LYt9lCSwEvNYb88gOyn53Vn1qE8G8uUfnhkLyy3rLlCGuw8K6fQqIHZs_e6b0gu4L5o86RFD5_UsEK3gIZIYc9Xq-YESD6Dyo2O57PD7eIxYf2in0rqhxhopVbVNeTCWgqRLVHlLrRo5lnP6DS5-Vwj5NTQ4_a5KZHolq-f8jvXEOMyNIAfQZLNFMgbISa3pLIy_NPOuSI5SJTPz_mxJ-6Q");'>
+<div class="relative z-20">
+<h1 class="text-white text-3xl font-bold leading-tight mb-2">Sistem Pengurusan Klinik</h1>
+<p class="text-white/80 text-lg">KK BANDAR TUN RAZAK</p>
+</div>
+</div>
+<!-- Right Side: Login Form -->
+<div class="flex-1 p-8 md:p-12 flex flex-col justify-center">
+<div class="mb-8">
+<div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">local_hospital</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-2xl font-bold">Log Masuk Kakitangan</h2>
+<p class="text-[#617589] dark:text-[#94a3b8] mt-2">Sila masukkan kredential anda untuk akses sistem klinik.</p>
+</div>
+<form class="space-y-5" onsubmit="return false;">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#111418] dark:text-white">Emel / ID Kakitangan</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#617589]">person</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#dbe0e6] dark:border-[#334155] bg-white dark:bg-[#0f172a] focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="Contoh: kkbtr-1234@moh.gov.my" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-semibold text-[#111418] dark:text-white">Kata Laluan</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[#617589]">lock</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#dbe0e6] dark:border-[#334155] bg-white dark:bg-[#0f172a] focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none transition-all" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-center justify-between py-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-[#617589] dark:text-[#94a3b8]">Ingat saya</span>
+</label>
+<a class="text-sm text-primary font-medium hover:underline" href="#">Lupa kata laluan?</a>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 rounded-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-primary/20" type="button">
+<span>Masuk ke Sistem</span>
+<span class="material-symbols-outlined text-sm">login</span>
+</button>
+</form>
+<div class="mt-8 pt-6 border-t border-[#dbe0e6] dark:border-[#334155] text-center">
+<p class="text-xs text-[#617589] dark:text-[#94a3b8]">Hak Cipta Terpelihara © 2024 Kementerian Kesihatan Malaysia</p>
+</div>
+</div>
+</div>
+</div>
+<!-- DASHBOARD VIEW (Hidden by default, shown after "login") -->
+<!-- Simulating Superadmin role as an example -->
+<div class="hidden h-screen flex overflow-hidden" id="dashboard-view">
+<!-- SIDEBAR -->
+<aside class="w-72 bg-white dark:bg-[#1a2632] border-r border-[#dbe0e6] dark:border-[#334155] flex flex-col">
+<div class="p-6">
+<div class="flex items-center gap-3 mb-8">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white">medical_services</span>
+</div>
+<div>
+<h1 class="text-sm font-bold leading-tight">KK BANDAR TUN RAZAK</h1>
+<p class="text-[10px] uppercase tracking-wider text-[#617589] dark:text-[#94a3b8]">Sistem Pengurusan</p>
+</div>
+</div>
+<div class="space-y-1">
+<p class="text-[11px] font-bold text-[#617589] dark:text-[#94a3b8] px-3 mb-2 uppercase">Menu Utama</p>
+<!-- Dashboard: All Roles -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary font-semibold" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm">Dashboard</span>
+</a>
+<!-- Bilik Rawatan: Pegawai Perubatan / Superadmin -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">stethoscope</span>
+<span class="text-sm">Bilik Rawatan Doktor</span>
+</a>
+<!-- Saringan (Triage): Jururawat / MA / Superadmin -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">emergency</span>
+<span class="text-sm">Saringan (Triage)</span>
+</a>
+<!-- Pendaftaran: PPK / Admin / Superadmin -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">how_to_reg</span>
+<span class="text-sm">Pendaftaran Pesakit</span>
+</a>
+<!-- Sejarah Pesakit: Pegawai Perubatan / Superadmin -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-sm">Sejarah Pesakit</span>
+</a>
+<!-- Cetak Pelekat: PPK / Nurse / Admin / Superadmin -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">print</span>
+<span class="text-sm">Cetak Pelekat/Resit</span>
+</a>
+<div class="pt-4 mt-4 border-t border-[#dbe0e6] dark:border-[#334155]">
+<p class="text-[11px] font-bold text-[#617589] dark:text-[#94a3b8] px-3 mb-2 uppercase">Sistem &amp; Pentadbir</p>
+<!-- Admin Modul -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-sm">Tetapan Sistem</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-[#111418] dark:text-white hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors" href="#">
+<span class="material-symbols-outlined">shield_person</span>
+<span class="text-sm">Audit Log</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-auto p-4 border-t border-[#dbe0e6] dark:border-[#334155]">
+<div class="flex items-center gap-3 mb-4 px-2">
+<div class="w-8 h-8 rounded-full bg-cover bg-center border border-[#dbe0e6] dark:border-[#334155]" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_v_oYDJKa30eNRtYKemNbjQyhbu275EWQCVonxcnHDAN3HH_qQ8jSsWU1lQFRVf82bZ3ehYFAA7mbTUgh3wv5wmZpaa-qOYc9LErQEmDKtUse8CBDSlJLu1vOYWj4bGxTvo-EIuhTXmKlOWSbOMTvS82SHu4HncvZBfh3GegDUA3lvZgVcxPawoX-Vxjbuhc_Ug2_b1I510-5iNK-lxW-u3M37Ct_BeUrEUHFDGDPlTQ9e6nOlTbd9NASo8W0znu9-hwllYGmk5Y");'></div>
+<div class="flex-1 overflow-hidden">
+<p class="text-xs font-bold truncate">Dr. Ahmad Razif</p>
+<p class="text-[10px] text-primary font-medium">Superadmin</p>
+</div>
+</div>
+<button class="w-full flex items-center gap-3 px-3 py-2 text-red-500 hover:bg-red-50 dark:hover:bg-red-500/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined">logout</span>
+<span class="text-sm font-semibold">Log Keluar</span>
+</button>
+</div>
+</aside>
+<!-- MAIN CONTENT -->
+<main class="flex-1 flex flex-col overflow-hidden">
+<!-- Header Bar -->
+<header class="h-16 bg-white dark:bg-[#1a2632] border-b border-[#dbe0e6] dark:border-[#334155] flex items-center justify-between px-8">
+<div class="flex items-center gap-4">
+<h2 class="text-lg font-bold">Ringkasan Dashboard</h2>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 rounded uppercase">Modul Superadmin</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors">
+<span class="material-symbols-outlined text-[#617589]">notifications</span>
+</button>
+<div class="h-6 w-[1px] bg-[#dbe0e6] dark:border-[#334155]"></div>
+<div class="text-right">
+<p class="text-xs text-[#617589] dark:text-[#94a3b8]">Khamis, 24 Okt 2024</p>
+<p class="text-xs font-bold">14:30 PM</p>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="flex-1 overflow-y-auto p-8 bg-background-light dark:bg-background-dark">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+<!-- Stat Card 1 -->
+<div class="bg-white dark:bg-[#1a2632] p-6 rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#334155]">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">group</span>
+<span class="text-green-500 text-xs font-bold">+12%</span>
+</div>
+<p class="text-[#617589] dark:text-[#94a3b8] text-sm">Jumlah Pendaftaran</p>
+<h3 class="text-2xl font-bold mt-1">128</h3>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-white dark:bg-[#1a2632] p-6 rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#334155]">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-orange-500 bg-orange-500/10 p-2 rounded-lg">hourglass_empty</span>
+<span class="text-red-500 text-xs font-bold">Sangat Tinggi</span>
+</div>
+<p class="text-[#617589] dark:text-[#94a3b8] text-sm">Menunggu Rawatan</p>
+<h3 class="text-2xl font-bold mt-1">45</h3>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-white dark:bg-[#1a2632] p-6 rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#334155]">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-green-500 bg-green-500/10 p-2 rounded-lg">task_alt</span>
+<span class="text-green-500 text-xs font-bold">78%</span>
+</div>
+<p class="text-[#617589] dark:text-[#94a3b8] text-sm">Selesai Rawatan</p>
+<h3 class="text-2xl font-bold mt-1">83</h3>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-white dark:bg-[#1a2632] p-6 rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#334155]">
+<div class="flex items-center justify-between mb-4">
+<span class="material-symbols-outlined text-purple-500 bg-purple-500/10 p-2 rounded-lg">speed</span>
+<span class="text-[#617589] text-xs font-bold">Purata</span>
+</div>
+<p class="text-[#617589] dark:text-[#94a3b8] text-sm">Masa Saringan</p>
+<h3 class="text-2xl font-bold mt-1">12 min</h3>
+</div>
+</div>
+<!-- Recent Activity Table -->
+<div class="bg-white dark:bg-[#1a2632] rounded-xl shadow-sm border border-[#dbe0e6] dark:border-[#334155] overflow-hidden">
+<div class="p-6 border-b border-[#dbe0e6] dark:border-[#334155] flex justify-between items-center">
+<h3 class="font-bold">Senarai Menunggu Terkini</h3>
+<button class="text-primary text-sm font-semibold hover:underline">Lihat Semua</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-background-light dark:bg-[#0f172a] text-[#617589] dark:text-[#94a3b8] text-[12px] uppercase tracking-wider">
+<th class="px-6 py-4 font-semibold">Nama Pesakit</th>
+<th class="px-6 py-4 font-semibold">No. Kad Pengenalan</th>
+<th class="px-6 py-4 font-semibold">Kategori Saringan</th>
+<th class="px-6 py-4 font-semibold">Masa Daftar</th>
+<th class="px-6 py-4 font-semibold">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#dbe0e6] dark:divide-[#334155]">
+<tr class="hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors">
+<td class="px-6 py-4 text-sm font-medium">Ali bin Abu Bakar</td>
+<td class="px-6 py-4 text-sm">851020-14-5673</td>
+<td class="px-6 py-4 text-sm">
+<span class="px-2 py-1 bg-yellow-100 dark:bg-yellow-500/20 text-yellow-700 dark:text-yellow-400 text-[10px] font-bold rounded uppercase">Semi-Kritikal</span>
+</td>
+<td class="px-6 py-4 text-sm text-[#617589]">14:15 PM</td>
+<td class="px-6 py-4 text-sm text-blue-500 font-bold">Menunggu</td>
+</tr>
+<tr class="hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors">
+<td class="px-6 py-4 text-sm font-medium">Siti Aminah binti Kassim</td>
+<td class="px-6 py-4 text-sm">920405-10-8842</td>
+<td class="px-6 py-4 text-sm">
+<span class="px-2 py-1 bg-green-100 dark:bg-green-500/20 text-green-700 dark:text-green-400 text-[10px] font-bold rounded uppercase">Biasa</span>
+</td>
+<td class="px-6 py-4 text-sm text-[#617589]">14:20 PM</td>
+<td class="px-6 py-4 text-sm text-blue-500 font-bold">Menunggu</td>
+</tr>
+<tr class="hover:bg-background-light dark:hover:bg-[#0f172a] transition-colors">
+<td class="px-6 py-4 text-sm font-medium">John Doe</td>
+<td class="px-6 py-4 text-sm">750101-14-5561</td>
+<td class="px-6 py-4 text-sm">
+<span class="px-2 py-1 bg-red-100 dark:bg-red-500/20 text-red-700 dark:text-red-400 text-[10px] font-bold rounded uppercase">Kritikal</span>
+</td>
+<td class="px-6 py-4 text-sm text-[#617589]">14:28 PM</td>
+<td class="px-6 py-4 text-sm text-primary font-bold">Dalam Saringan</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
